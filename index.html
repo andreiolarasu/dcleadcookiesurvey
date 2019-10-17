@@ -28,8 +28,17 @@
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
   <style>
-    body{
+    #survey {
       margin: auto;
+      width: 50%;
+    }
+
+    #popup {
+      margin: 20px auto;
+      width: 700px;
+    }
+    #popupContentFrame {
+      margin: 20px auto;
       width: 50%;
     }
   </style>
@@ -41,10 +50,24 @@
   <![endif]-->
 
 
+
+  <div id="popup">
+    <div id="popupContentFrame">
+      <div>Header</div>
+      <div>Some explanation text.</div>
+      <div class="buttonFrame">
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+      </div>
+    </div>
+  </div>
   <!-- survey -->
   <div id="survey">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJZXgA9RHtUBfgUzQbCMbZHw4OW_r5asql_WqrBVdQpv_SxQ/viewform?embedded=true" width="700" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
   </div>
+
+
 
 
 

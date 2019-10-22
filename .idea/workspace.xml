@@ -88,7 +88,7 @@
       <workItem from="1571238668913" duration="33000" />
       <workItem from="1571238711117" duration="1776000" />
       <workItem from="1571301958180" duration="4472000" />
-      <workItem from="1571643292436" duration="10210000" />
+      <workItem from="1571643292436" duration="10290000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1571767603417</created>
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571767636974</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="API Url change">
+      <created>1571767803468</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571767803468</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="API Url change" />
+    <option name="LAST_COMMIT_MESSAGE" value="API Url change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

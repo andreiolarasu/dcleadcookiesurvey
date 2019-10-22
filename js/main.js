@@ -4,7 +4,7 @@ function timer() {
 }
 function yes() {
   alert("Yes");
-  $.post("http://cookiesurvey.azurewebsites.net/api/cookies", {fromSite : "fromSitedata", otherStuff: "randomStuff"}, null,  "json");
+  $.post("https://cookiesurvey.azurewebsites.net/api/cookies", {fromSite : "fromSitedata", otherStuff: "randomStuff"}, null,  "json");
   //    todo: code for saving the default YES preferences
 }
 function no() {

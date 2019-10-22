@@ -7,15 +7,32 @@
   margin: 20px auto;
   width: 700px;
 }
-#popupContentFrame {
+
+#popupContentFrameA {
+  display: none;
   margin: 20px auto;
   width: 50%;
 }
-#customFrame {
-  display: none;
-  border: black 2px solid;
+#defaultFrameA {
+  border: green 2px solid;
+  margin-bottom: 20px;
 }
-#defaultFrame {
+#customFrameA {
+  display: none;
+  border: blue 2px solid;
+}
+
+
+#popupContentFrameB {
+  display: none;
+  margin: 20px auto;
+  width: 50%;
+}
+#defaultFrameB {
   border: red 2px solid;
   margin-bottom: 20px;
+}
+#customFrameB {
+  display: none;
+  border: yellow 2px solid;
 }

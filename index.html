@@ -28,56 +28,90 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  </head>
+</head>
 
 <body>
-    <div id="popup">
-    <div id="popupContentFrame">
-      <div id="defaultFrame" class="contentFrame">
-        <div class="popupHeader">First cookie header</div>
-        <div class="popupParagraph">Some explanation text.</div>
-        <div class="buttonFrame">
-          <button id="yesBtn" onclick="yes()">Yes</button>
-          <button id="noBtn" onclick="no()">No</button>
-          <button id="readBtn" onclick="read()">Read more</button>
-        </div>
+<div id="popup">
+  <div id="popupContentFrameA">
+    <!--  For batch A  -->
+    <div id="defaultFrameA" class="contentFrame">
+      <div class="popupHeader">First cookie header</div>
+      <div class="popupParagraph">Some explanation text.</div>
+      <div class="buttonFrame">
+        <button id="yesBtnA" onclick="yes()">Yes</button>
+        <button id="noBtnA" onclick="no()">No</button>
+        <button id="readBtnA" onclick="read()">Read more</button>
       </div>
-      <div id="customFrame" class="contentFrame">
-        <div class="popupHeader">Custom Frame Header about cookie preferences</div>
-        <div class="popupParagraph">Some explanation text about the custom frame and choosing options.</div>
-        <div><label>
-          <input type="checkbox" />
-        </label> <span>Option 1</span></div>
-        <div><label>
-          <input type="checkbox" />
-        </label> <span>Option 2</span></div>
-        <div><label>
-          <input type="checkbox" />
-        </label> <span>Option 3</span></div>
-        <div><label>
-          <input type="checkbox" />
-        </label> <span>Option 4</span></div>
-        <div>
-          <button id="disagreeAllBtn" onclick="disagreeAll()">Disagree all preferences</button>
-          <button id="agreeAllBtn" onclick="agreeAll()">Agree all preferences</button>
-          <button id="saveBtn" onclick="custom()">Save custom preferences</button>
-        </div>
+    </div>
+    <div id="customFrameA" class="contentFrame">
+      <div class="popupHeader">Custom Frame Header about cookie preferences</div>
+      <div class="popupParagraph">Some explanation text about the custom frame and choosing options.</div>
+      <div><label>
+        <input type="checkbox" id="o1" />
+      </label> <span>Option 1</span></div>
+      <div><label>
+        <input type="checkbox" id="o2"/>
+      </label> <span>Option 2</span></div>
+      <div><label>
+        <input type="checkbox" id="o3"/>
+      </label> <span>Option 3</span></div>
+      <div><label>
+        <input type="checkbox" id="o4"/>
+      </label> <span>Option 4</span></div>
+      <div>
+        <button id="disagreeAllBtnA" onclick="disagreeAll()">Disagree all preferences</button>
+        <button id="agreeAllBtnA" onclick="agreeAll()">Agree all preferences</button>
+        <button id="saveBtnA" onclick="custom()">Save custom preferences</button>
       </div>
     </div>
   </div>
-
-  <!-- survey -->
-  <div id="survey">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJZXgA9RHtUBfgUzQbCMbZHw4OW_r5asql_WqrBVdQpv_SxQ/viewform?embedded=true" width="700" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <div id="popupContentFrameB">
+    <!--  For batch B  -->
+    <div id="defaultFrameB" class="contentFrame">
+      <div class="popupHeader">First cookie header</div>
+      <div class="popupParagraph">Some explanation text.</div>
+      <div class="buttonFrame">
+        <button id="yesBtn" onclick="yes()">Yes</button>
+        <button id="noBtn" onclick="no()">No</button>
+        <button id="readBtn" onclick="read()">Read more</button>
+      </div>
+    </div>
+    <div id="customFrameB" class="contentFrame">
+      <div class="popupHeader">Custom Frame Header about cookie preferences</div>
+      <div class="popupParagraph">Some explanation text about the custom frame and choosing options.</div>
+      <div><label>
+        <input type="checkbox" />
+      </label> <span>Option 1</span></div>
+      <div><label>
+        <input type="checkbox" />
+      </label> <span>Option 2</span></div>
+      <div><label>
+        <input type="checkbox" />
+      </label> <span>Option 3</span></div>
+      <div><label>
+        <input type="checkbox" />
+      </label> <span>Option 4</span></div>
+      <div>
+        <button id="disagreeAllBtnB" onclick="disagreeAll()">Disagree all preferences</button>
+        <button id="agreeAllBtnB" onclick="agreeAll()">Agree all preferences</button>
+        <button id="saveBtnB" onclick="custom()">Save custom preferences</button>
+      </div>
+    </div>
   </div>
+</div>
+
+<!-- survey -->
+<div id="survey">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJZXgA9RHtUBfgUzQbCMbZHw4OW_r5asql_WqrBVdQpv_SxQ/viewform?embedded=true" width="700" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
 
 
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>

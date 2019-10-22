@@ -1,31 +1,77 @@
-function timer() {
-  //    todo: start timer when the user arrived on the page to calculate the time it takes to press each button
-  //    todo alternative: save timestamp for each click and send it to the API
+var po = {
+  // ba: null,
+  // tj: null,
+  // ty: null,
+  // tn: null,
+  // tr: null,
+  // ta: null,
+  // td: null,
+  // tc: null
+};
+
+var u = 'http://localhost:52648/api/cookies';
+
+//initializing the batch, the joining timestamp, and showing the correct popup
+function init() {
+  po.ba = (Math.floor(Math.random() * 2) === 0) ? 'A' : 'B';
+  po.tj = Date.now();
+  var batchCodeToBeRemoved = po.ba == 'A' ? 'B' : 'A';
+  var popup = document.querySelector('#popupContentFrame' + batchCodeToBeRemoved);
+  popup.parentNode.removeChild(popup);
+  $('#popupContentFrame' + po.ba)[0].style.display = "block";
 }
+
 function yes() {
-  alert("Yes");
-  $.post("https://cookiesurvey.azurewebsites.net/api/cookies", {fromSite : "fromSitedata", otherStuff: "randomStuff"}, null,  "json");
-  //    todo: code for saving the default YES preferences
+  po.ty = Date.now();
+  closeAndSendData();
 }
+
 function no() {
-  alert("No");
-  //    todo: code for saving the default NO preferences
+  po.tn = Date.now();
+  closeAndSendData();
 }
+
 function read() {
-  $('#defaultFrame')[0].style.display = "none";
-  $('#customFrame')[0].style.display = "block";
-  //    todo: code for the hiding defaultFrame and showing customFrame
+  po.tr = Date.now();
+  $('#defaultFrame' + po.ba)[0].style.display = "none";
+  $('#customFrame' + po.ba)[0].style.display = "block";
 }
 function agreeAll() {
-  //    todo: code for saving all the preferences as YES
+  po.ta = Date.now();
+  closeAndSendData();
 }
 function disagreeAll() {
-  //    todo: code for saving all the preferences as NO
+  po.td = Date.now();
+  closeAndSendData();
 }
+
 function custom() {
-  //    todo: code for saving the CUSTOM preferences
+  po.tc = Date.now();
+  if ($('#o1').is(":checked"))
+  {
+    po.o1 = 'Yes';
+  }
+
+  if ($('#o2').is(":checked"))
+  {
+    po.o2 = 'Yes';
+  }
+
+  if ($('#o3').is(":checked"))
+  {
+    po.o3 = 'Yes';
+  }
+
+  if ($('#o4').is(":checked"))
+  {
+    po.o4 = 'Yes';
+  }
+  closeAndSendData();
 }
-function save() {
-  //    todo: code for saving preferences and making the API call
-  //    todo: getting the values of the checkboxes
+
+function closeAndSendData(){
+  $('#popupContentFrame' + po.ba)[0].style.display = "none";
+  $.post(u, JSON.stringify(po), null,  "json");
 }
+document.addEventListener("DOMContentLoaded", init);
+

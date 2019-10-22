@@ -9,7 +9,7 @@ var po = {
   // tc: null
 };
 
-var u = 'http://localhost:52648/api/cookies';
+var u = 'https://cookiesurvey.azurewebsites.net/api/cookies';
 
 //initializing the batch, the joining timestamp, and showing the correct popup
 function init() {

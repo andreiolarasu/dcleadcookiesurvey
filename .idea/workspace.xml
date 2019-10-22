@@ -5,7 +5,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a05f239-ad52-4041-984e-2223df68c4a2" name="Default Changelist" comment="" />
+    <list default="true" id="0a05f239-ad52-4041-984e-2223df68c4a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +91,7 @@
       <workItem from="1571238668913" duration="33000" />
       <workItem from="1571238711117" duration="1776000" />
       <workItem from="1571301958180" duration="4472000" />
-      <workItem from="1571643292436" duration="15030000" />
+      <workItem from="1571643292436" duration="15486000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1571767603417</created>
@@ -125,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571772939682</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Live api url">
+      <created>1571772987127</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571772987127</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +158,7 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="API Url change" />
     <MESSAGE value="Add logic and separate dom elements for batches" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logic and separate dom elements for batches" />
+    <MESSAGE value="Live api url" />
+    <option name="LAST_COMMIT_MESSAGE" value="Live api url" />
   </component>
 </project>

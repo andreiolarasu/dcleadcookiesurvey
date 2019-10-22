@@ -1,0 +1,21 @@
+#survey {
+  margin: auto;
+  width: 50%;
+}
+
+#popup {
+  margin: 20px auto;
+  width: 700px;
+}
+#popupContentFrame {
+  margin: 20px auto;
+  width: 50%;
+}
+#customFrame {
+  display: none;
+  border: black 2px solid;
+}
+#defaultFrame {
+  border: red 2px solid;
+  margin-bottom: 20px;
+}

@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a05f239-ad52-4041-984e-2223df68c4a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +91,7 @@
       <workItem from="1571238668913" duration="33000" />
       <workItem from="1571238711117" duration="1776000" />
       <workItem from="1571301958180" duration="4472000" />
-      <workItem from="1571643292436" duration="16152000" />
+      <workItem from="1571643292436" duration="16644000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1571767603417</created>
@@ -149,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571773757327</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix tracking checkboxes">
+      <created>1571774103222</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571774103222</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +182,7 @@
     <MESSAGE value="Live api url" />
     <MESSAGE value="Const change" />
     <MESSAGE value="Add tracking for checkboxes for agree all and disagree all buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tracking for checkboxes for agree all and disagree all buttons" />
+    <MESSAGE value="Fix tracking checkboxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix tracking checkboxes" />
   </component>
 </project>

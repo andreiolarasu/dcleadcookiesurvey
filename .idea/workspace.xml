@@ -91,7 +91,7 @@
       <workItem from="1571238668913" duration="33000" />
       <workItem from="1571238711117" duration="1776000" />
       <workItem from="1571301958180" duration="4472000" />
-      <workItem from="1571643292436" duration="15756000" />
+      <workItem from="1571643292436" duration="16152000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1571767603417</created>
@@ -142,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571773440174</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add tracking for checkboxes for agree all and disagree all buttons">
+      <created>1571773757327</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1571773757327</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +174,7 @@
     <MESSAGE value="Add logic and separate dom elements for batches" />
     <MESSAGE value="Live api url" />
     <MESSAGE value="Const change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Const change" />
+    <MESSAGE value="Add tracking for checkboxes for agree all and disagree all buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tracking for checkboxes for agree all and disagree all buttons" />
   </component>
 </project>

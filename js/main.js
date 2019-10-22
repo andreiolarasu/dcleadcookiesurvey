@@ -37,21 +37,6 @@ function read() {
   $('#defaultFrame' + po.ba)[0].style.display = "none";
   $('#customFrame' + po.ba)[0].style.display = "block";
 }
-function agreeAll() {
-  po.ta = Date.now();
-  checkCheckboxes();
-  closeAndSendData();
-}
-function disagreeAll() {
-  po.td = Date.now();
-  checkCheckboxes();
-  closeAndSendData();
-}
-
-function custom() {
-  po.tc = Date.now();
-  closeAndSendData();
-}
 
 function checkCheckboxes(){
   if ($('#o1').is(":checked"))
@@ -73,6 +58,24 @@ function checkCheckboxes(){
   {
     po.o4 = 'Yes';
   }
+}
+
+function agreeAll() {
+  po.ta = Date.now();
+  checkCheckboxes();
+  closeAndSendData();
+}
+
+function disagreeAll() {
+  po.td = Date.now();
+  checkCheckboxes();
+  closeAndSendData();
+}
+
+function custom() {
+  po.tc = Date.now();
+  checkCheckboxes();
+  closeAndSendData();
 }
 
 function closeAndSendData(){

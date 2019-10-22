@@ -39,15 +39,21 @@ function read() {
 }
 function agreeAll() {
   po.ta = Date.now();
+  checkCheckboxes();
   closeAndSendData();
 }
 function disagreeAll() {
   po.td = Date.now();
+  checkCheckboxes();
   closeAndSendData();
 }
 
 function custom() {
   po.tc = Date.now();
+  closeAndSendData();
+}
+
+function checkCheckboxes(){
   if ($('#o1').is(":checked"))
   {
     po.o1 = 'Yes';
@@ -67,7 +73,6 @@ function custom() {
   {
     po.o4 = 'Yes';
   }
-  closeAndSendData();
 }
 
 function closeAndSendData(){

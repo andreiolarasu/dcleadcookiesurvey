@@ -91,7 +91,7 @@
       <workItem from="1571238668913" duration="33000" />
       <workItem from="1571238711117" duration="1776000" />
       <workItem from="1571301958180" duration="4472000" />
-      <workItem from="1571643292436" duration="15486000" />
+      <workItem from="1571643292436" duration="15756000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1571767603417</created>
@@ -135,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571772987127</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Const change">
+      <created>1571773440174</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571773440174</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +166,7 @@
     <MESSAGE value="API Url change" />
     <MESSAGE value="Add logic and separate dom elements for batches" />
     <MESSAGE value="Live api url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Live api url" />
+    <MESSAGE value="Const change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Const change" />
   </component>
 </project>

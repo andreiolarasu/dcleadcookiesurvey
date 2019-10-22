@@ -11,7 +11,6 @@ var po = {
 
 const u = 'https://cookiesurvey.azurewebsites.net/api/cookies';
 
-
 //initializing the batch, the joining timestamp, and showing the correct popup
 function init() {
   po.ba = (Math.floor(Math.random() * 2) === 0) ? 'A' : 'B';
@@ -39,22 +38,25 @@ function read() {
 }
 
 function checkCheckboxes(){
-  if ($('#o1').is(":checked"))
+  var batch = 'a';
+  if(po.ba !== 'A')
+    batch = 'b';
+  if ($('#o' + batch + '1').is(":checked"))
   {
     po.o1 = 'Yes';
   }
 
-  if ($('#o2').is(":checked"))
+  if ($('#o' + batch + '2').is(":checked"))
   {
     po.o2 = 'Yes';
   }
 
-  if ($('#o3').is(":checked"))
+  if ($('#o' + batch + '3').is(":checked"))
   {
     po.o3 = 'Yes';
   }
 
-  if ($('#o4').is(":checked"))
+  if ($('#o' + batch + '4').is(":checked"))
   {
     po.o4 = 'Yes';
   }

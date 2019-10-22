@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
 
   <meta name="theme-color" content="#fafafa">
 
@@ -27,48 +28,48 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  <style>
-    #survey {
-      margin: auto;
-      width: 50%;
-    }
-
-    #popup {
-      margin: 20px auto;
-      width: 700px;
-    }
-    #popupContentFrame {
-      margin: 20px auto;
-      width: 50%;
-    }
-  </style>
   </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-
-
-  <div id="popup">
+    <div id="popup">
     <div id="popupContentFrame">
-      <div>Header</div>
-      <div>Some explanation text.</div>
-      <div class="buttonFrame">
-        <button id="yesBtn">Yes</button>
-        <button id="noBtn">No</button>
+      <div id="defaultFrame" class="contentFrame">
+        <div class="popupHeader">First cookie header</div>
+        <div class="popupParagraph">Some explanation text.</div>
+        <div class="buttonFrame">
+          <button id="yesBtn" onclick="yes()">Yes</button>
+          <button id="noBtn" onclick="no()">No</button>
+          <button id="readBtn" onclick="read()">Read more</button>
+        </div>
+      </div>
+      <div id="customFrame" class="contentFrame">
+        <div class="popupHeader">Custom Frame Header about cookie preferences</div>
+        <div class="popupParagraph">Some explanation text about the custom frame and choosing options.</div>
+        <div><label>
+          <input type="checkbox" />
+        </label> <span>Option 1</span></div>
+        <div><label>
+          <input type="checkbox" />
+        </label> <span>Option 2</span></div>
+        <div><label>
+          <input type="checkbox" />
+        </label> <span>Option 3</span></div>
+        <div><label>
+          <input type="checkbox" />
+        </label> <span>Option 4</span></div>
+        <div>
+          <button id="disagreeAllBtn" onclick="disagreeAll()">Disagree all preferences</button>
+          <button id="agreeAllBtn" onclick="agreeAll()">Agree all preferences</button>
+          <button id="saveBtn" onclick="custom()">Save custom preferences</button>
+        </div>
       </div>
     </div>
   </div>
+
   <!-- survey -->
   <div id="survey">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJZXgA9RHtUBfgUzQbCMbZHw4OW_r5asql_WqrBVdQpv_SxQ/viewform?embedded=true" width="700" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
   </div>
-
-
-
 
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>

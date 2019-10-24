@@ -1,1 +1,1 @@
-"# hotjartest" 
+Cookie Survey Front-End code
